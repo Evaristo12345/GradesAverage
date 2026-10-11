@@ -15,3 +15,19 @@ public static void main(String[] args) {
         for (int i = 1; i <= TOTAL_GRADES; i++) {
             float currentGrade = -1.0f;
             boolean isValid = false;
+            while (!isValid) {
+                System.out.print("Enter grade #" + i + ": ");
+                
+                if (scanner.hasNextFloat()) {
+                    currentGrade = scanner.nextFloat();
+                    
+                    if (currentGrade >= MIN_GRADE && currentGrade <= MAX_GRADE) {
+                        isValid = true;
+                    } else {
+                        System.out.println("Invalid range! Grade must be between 0.0 and 100.0. Please try again.");
+                    }
+                } else {
+                    System.out.println("Invalid input type! Please enter a valid floating-point number.");
+                    scanner.next();
+                }
+            }
