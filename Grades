@@ -4,3 +4,9 @@ public class GradeStatistics {
     public static final int TOTAL_GRADES = 10;
     public static final float MIN_GRADE = 0.0f;
     public static final float MAX_GRADE = 100.0f;
+public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        float sum = 0.0f;
+        float maximum = MIN_GRADE; 
+        float minimum = MAX_GRADE; 
