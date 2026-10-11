@@ -10,3 +10,8 @@ public static void main(String[] args) {
         float sum = 0.0f;
         float maximum = MIN_GRADE; 
         float minimum = MAX_GRADE; 
+        System.out.println("Please enter " + TOTAL_GRADES + " grades between 0.0 and 100.0.");
+
+        for (int i = 1; i <= TOTAL_GRADES; i++) {
+            float currentGrade = -1.0f;
+            boolean isValid = false;
