@@ -31,3 +31,23 @@ public static void main(String[] args) {
                     scanner.next();
                 }
             }
+
+            sum += currentGrade;
+            if (currentGrade > maximum) {
+                maximum = currentGrade;
+            }
+            if (currentGrade < minimum) {
+                minimum = currentGrade;
+            }
+        }
+
+        float average = sum / TOTAL_GRADES;
+
+        System.out.println("\n--- Grade Statistics ---");
+        System.out.printf("Average: %.2f\n", average);
+        System.out.printf("Maximum: %.2f\n", maximum);
+        System.out.printf("Minimum: %.2f\n", minimum);
+
+        scanner.close();
+    }
+}
