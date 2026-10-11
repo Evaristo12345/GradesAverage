@@ -1,0 +1,6 @@
+import java.util.Scanner;
+
+public class GradeStatistics {
+    public static final int TOTAL_GRADES = 10;
+    public static final float MIN_GRADE = 0.0f;
+    public static final float MAX_GRADE = 100.0f;
